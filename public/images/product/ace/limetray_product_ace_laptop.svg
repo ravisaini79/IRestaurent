@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="264" height="184" viewBox="0 0 264 184">
+    <defs>
+        <rect id="a" width="250" height="170" rx="5"/>
+        <filter id="b" width="108.4%" height="112.4%" x="-4.2%" y="-6.2%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+        </filter>
+        <linearGradient id="f" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="100%" stop-color="#FAFBFC"/>
+        </linearGradient>
+        <path id="e" d="M0 0h250v13.838H0z"/>
+        <filter id="d" width="102.4%" height="143.4%" x="-1.2%" y="-21.7%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+        </filter>
+        <path id="g" d="M0 13.838h250v151a5 5 0 0 1-5 5H5a5 5 0 0 1-5-5v-151z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(7 7)">
+        <mask id="c" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#000" filter="url(#b)" xlink:href="#a"/>
+        <use fill="#F4F6F9" xlink:href="#a"/>
+        <g mask="url(#c)">
+            <use fill="#000" filter="url(#d)" xlink:href="#e"/>
+            <use fill="url(#f)" xlink:href="#e"/>
+        </g>
+        <circle cx="18.22" cy="6.919" r="1.845" fill="#34C749" mask="url(#c)"/>
+        <circle cx="12.223" cy="6.919" r="1.845" fill="#FDBC40" mask="url(#c)"/>
+        <circle cx="6.458" cy="6.919" r="1.845" fill="#FC605C" mask="url(#c)"/>
+    </g>
+</svg>

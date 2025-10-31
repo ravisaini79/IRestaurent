@@ -1,0 +1,65 @@
+section#career-top-banner.hide-for-small-only {
+    position: relative;
+    min-height: 100vh;
+    background-image: url(../img/terms/greenwheels-terms-banner.html);
+    background-size: 115%;
+    background-position: top left 88%;}
+
+section#career-top-banner {
+   position: relative;
+   min-height: 50vh;
+   background-image: url(../img/terms/greenwheels-terms-banner.html);
+   background-size: cover;
+   background-position: bottom -7% center;
+}
+section#career-top-banner h1 {
+    position: absolute;
+    margin: 0px auto;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+section#career-top-banner h1 {
+    position: absolute;
+    margin: 0px auto;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 22vh;
+}
+section#career-top-banner-small {
+    position: relative;
+    min-height: 100vh;
+    background-image: url(../img/terms/greenwheels-terms-banner.html);
+    background-size: cover;
+    background-position: top left 60%;}
+    .career-caption {
+    padding: 20vh 0;
+}
+.career-caption {
+    padding: 5vh 40px;
+    margin: 0 auto;
+    width: 70%;
+    float: none;
+}
+.career-caption p {
+    text-align: left !important;
+    text-transform: none;
+}
+.career-caption h2 {
+    padding: 20px 0px;
+    text-align: left;
+}
+@media(max-width:670px)
+{
+    section#career-top-banner {
+    min-height: 20vh !important;
+    background-position: center !important;
+}
+.career-caption {
+    width: 90% !important;
+}
+section#career-top-banner h1 {
+    padding: 9vh !important;
+}
+}
