@@ -6,6 +6,7 @@ import ReviewSitesSection from '../components/ReviewSitesSection';
 import DemoForm from '../components/DemoForm';
 import TestimonialSlider from '../components/TestimonialSlider';
 import { useEffect, useRef } from 'react';
+import About from '../components/About';
 import { useScroll } from '../context/ScrollContext';
 
 
@@ -24,52 +25,53 @@ export default function Home({setScrollHandler }) {
     <>
      
     {/* section I */}
-    <section className="bg-white  px-6 lg:px-24 flex flex-col lg:flex-row items-center " style={{justifyContent:'space-around'}}>
+    <section className="backg  px-6 lg:px-24 flex flex-col lg:flex-row items-center h-100" style={{justifyContent:'end'}}>
       {/* Text Content */}
-      <div className="max-w-xl mb-12 lg:mb-0 text-center">
-        <h1 className="text-3xl lg:text-[32px] font-bold text-gray-900 mb-4 leading-tight">
+      <div className="max-w-xl mb-12 lg:mb-0 text-end ">
+        <h1 className="text-3xl lg:text-[42px] font-bold text-warning-100 mb-4 leading-tight">
           A single platform for all <br /> your restaurant’s needs
         </h1>
-        <p className="text-gray-700 mb-6">
+        <h4 className="text-gray-900 mb-6">
           Grow your online business, manage your restaurant operations & market your brand better
           with greenwheels’s restaurant software suite.
-        </p>
+        </h4>
         <button className=" bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded font-semibold shadow">
           FREE DEMO
         </button>
       </div>
 
       {/* Image Content */}
-      <div className="flex justify-center items-center">
+      {/* <div className="flex justify-center items-center">
         <img
-          src="public/IRImages/front.jpeg" // <-- update this to your actual image path
+          src="public/IRImages/front.jpeg" 
           alt="greenwheels Devices"
           className=""
           style={{height:'550px'}}
         />
-      </div>
+      </div> */}
     </section>
     {/* section 2 */}
-    <section className=" bg-gray-100 py-12 px-6 text-center">
+    <section className=" bg-white py-12 px-6 text-center">
       <h2 className="text-xl font-semibold text-gray-800 mb-8">
         Trusted By 200+ Restaurants
       </h2>
 
-      <div className="grid grid-cols-4 gap-4 sm:grid-cols-8">
+      <div className="grid grid-cols-4 gap-4 sm:grid-cols-8 bg-white">
         {/* Replace these src values with your actual logo image paths */}
-        <img src="/img/burger-king-greenwheels.png" alt="Burger King" className="h-20 object-contain" />
-        <img src="/img/jollibee.png" alt="Jollibee" className="h-20 object-contain" />
-        <img src="/img/cake-shop.png" alt="The Cake Shop" className="h-20 object-contain" />
-        <img src="/img/dominos.jpg" alt="Domino's" className="h-20 object-contain" />
-        <img src="/img/rolls-mania.png" alt="Rolls Mania" className="h-20 object-contain" />
-        <img src="/img/sr-foods.jpg" alt="SR Foods" className="h-20 object-contain" />
-        <img src="/img/mod.png" alt="MOD" className="h-20 object-contain" />
-        <img src="/img/dana-choga.png" alt="Dana Choga" className="h-20 object-contain" />
+        <img src="public/Menu/bakehut.jpg" alt="Bakehut" className="h-20 object-contain" />
+        <img src="public/Menu/Baramasi.jpg" alt="Baramasi" className="h-20 object-contain" />
+        <img src="public/Menu/club naila.jpg" alt="Club Naila" className="h-20 object-contain" />
+        <img src="public/Menu/CONSTITUTIONLOGO-png.png" alt="RajCCR" className="h-20 object-contain" />
+        <img src="public/Menu/Dhaba culture.jpg" alt="Dhaba Culture" className="h-20 object-contain" />
+        <img src="public/Menu/Kesar-Png-Logo_130x.webp" alt="Kesar" className="h-20 object-contain" />
+        <img src="public/Menu/sky beach.jpg" alt="Sky Beach" className="h-20 object-contain" />
+        <img src="public/Menu/sky fall.png" alt="Sky Fall" className="h-20 object-contain" />
       </div>
     </section>
+    <About/>
     <SolutionSection/>
-    <ReviewSitesSection/>
-    <TestimonialSlider/>
+    {/* <ReviewSitesSection/> */}
+    {/* <TestimonialSlider/> */}
     <greenwheelsAdvantage/>
     <DemoForm ref={formRef}/>
     
