@@ -1,0 +1,11 @@
+.row.onhover-vid .ace-vid-laptop{ background: #fdfeff;   
+ width: 90%;        margin: 8% auto 0 !important;
+    max-height: 82%;   overflow: hidden;}
+.row.onhover-mob-vid .ace-vid-mob {
+    background: #fdfeff;
+    width: 62%;
+    margin: 28% auto 0 !important;
+    bottom: initial !important;
+    min-height: 60%;
+    overflow: hidden;
+}
