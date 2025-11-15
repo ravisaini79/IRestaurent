@@ -29,8 +29,14 @@ const SolutionsSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
         {solutions.map((item, index) => (
           <div key={index} className="flex flex-col items-center">
-            <img src={item.img} alt={item.title} className="h-48 object-contain mb-6" />
-            
+
+            {/* ROUND IMAGE */}
+            <img
+              src={item.img}
+              alt={item.title}
+              className="w-40 h-40 rounded-full object-cover mb-6 shadow-md"
+            />
+
             <h3 className="text-lg font-bold text-gray-800 mb-2">
               {item.title} <span className="text-green-600">→</span>
             </h3>
@@ -40,6 +46,7 @@ const SolutionsSection = () => {
             <button className="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded text-sm font-medium">
               LEARN MORE
             </button>
+
           </div>
         ))}
       </div>
