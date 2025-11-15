@@ -26,10 +26,37 @@ export default function Home({setScrollHandler }) {
     <>
      
     {/* section I */}
-    <Homeslider/>
-  
+   
+        <section className="backg  px-6 lg:px-15 flex flex-col lg:flex-row items-center h-100" style={{justifyContent:'center'}}>
+           {/* <Homeslider/> */}
+
+      {/* Text Content */}
+      <div className="max-w-xl mb-12 lg:mb-0 text-center ">
+        <h1 className="text-3xl lg:text-[42px] font-bold text-white mb-4 leading-tight">
+          A single <b className='' style={{color:'grey'}}>platform</b> for all <br /> your restaurant’s needs
+        </h1>
+        <h4 className="text-gray-900 mb-6" style={{background:'aliceblue'}}>
+          Grow your online business, manage your restaurant operations & market your brand better
+          with greenwheels’s restaurant software suite.
+        </h4>
+        <button className=" bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded font-semibold shadow">
+          FREE DEMO
+        </button>
+      </div>
+
+      {/* Image Content */}
+      {/* <div className="flex justify-center items-center">
+        <img
+          src="public/IRImages/front.jpeg" 
+          alt="greenwheels Devices"
+          className=""
+          style={{height:'550px'}}
+        />
+      </div> */}
+    </section>
+   <About/>
     {/* section 2 */}
-    <section className=" bg-white py-8 px-7 text-center" style={{borderTop:'1px solid #dad1d1'}}>
+    <section className=" bg-white py-8 px-7 text-center" style={{borderBottom:'1px solid #dad1d1'}}>
       <h2 className="text-xl font-semibold text-gray-800 mb-8">
         Trusted By 200+ Restaurants
       </h2>
@@ -46,36 +73,12 @@ export default function Home({setScrollHandler }) {
 </div>
 
     </section>
-    <About/>
+   
     <SolutionSection/>
     {/* <ReviewSitesSection/> */}
     {/* <TestimonialSlider/> */}
     <greenwheelsAdvantage/>
-      <section className="backg  px-6 lg:px-15 flex flex-col lg:flex-row items-center h-100" style={{justifyContent:'end'}}>
-      {/* Text Content */}
-      {/* <div className="max-w-xl mb-12 lg:mb-0 text-end ">
-        <h1 className="text-3xl lg:text-[42px] font-bold text-white mb-4 leading-tight">
-          A single platform for all <br /> your restaurant’s needs
-        </h1>
-        <h4 className="text-gray-900 mb-6">
-          Grow your online business, manage your restaurant operations & market your brand better
-          with greenwheels’s restaurant software suite.
-        </h4>
-        <button className=" bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded font-semibold shadow">
-          FREE DEMO
-        </button>
-      </div> */}
-
-      {/* Image Content */}
-      {/* <div className="flex justify-center items-center">
-        <img
-          src="public/IRImages/front.jpeg" 
-          alt="greenwheels Devices"
-          className=""
-          style={{height:'550px'}}
-        />
-      </div> */}
-    </section>
+  
     <DemoForm ref={formRef}/>
     
     {/* slider */}
