@@ -47,7 +47,7 @@ const Header = () => {
             </div>
           </div>
           <a href="#" className="hover:text-green-600">Resources</a>
-          <a href="#" className="hover:text-green-600">Blog</a>
+          {/* <a href="#" className="hover:text-green-600">Blog</a> */}
         </nav>
 
         {/* Call to Action (Desktop) */}
@@ -55,7 +55,7 @@ const Header = () => {
           onClick={() => scrollToForm?.()}
           className="hidden md:inline-block border border-black px-4 py-2 text-sm font-semibold hover:bg-green-600 hover:text-white transition"
         >
-          FREE DEMO
+          Get in Touch
         </button>
 
         {/* Mobile Hamburger */}
@@ -76,7 +76,7 @@ const Header = () => {
             <span className="block">Restaurant Type</span>
           </div>
           <a href="#" className="block">Resources</a>
-          <a href="#" className="block">Blog</a>
+          {/* <a href="#" className="block">Blog</a> */}
           <button
             onClick={() => {
               scrollToForm?.();

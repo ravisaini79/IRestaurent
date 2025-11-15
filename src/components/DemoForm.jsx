@@ -1,5 +1,5 @@
 import React, { forwardRef, useState } from "react";
-// import emailjs from "emailjs-com";
+import emailjs from "emailjs-com";
 
 const DemoForm = forwardRef((props, ref) => {
 
@@ -22,10 +22,10 @@ const DemoForm = forwardRef((props, ref) => {
     e.preventDefault();
 
     emailjs.send(
-      "service_gp4y0z5",
-      "YOUR_TEMPLATE_ID",
+      "service_td2favh",
+      "template_egpaqol",
       formData,
-      "YOUR_PUBLIC_KEY"
+      "rxVYeMUKghPU6nGUr"
     )
     .then(() => {
       alert("Demo request sent successfully!");

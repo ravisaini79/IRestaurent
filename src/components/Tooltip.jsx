@@ -13,14 +13,14 @@ export default function Tooltip() {
         <h2 className="font-bold mb-1 cursor-pointer hover:text-green-600 flex items-center">
           Online Food Ordering System <span className="ml-1">→</span>
         </h2>
-        <p className="text-gray-500 text-sm mb-3">
+        {/* <p className="text-gray-500 text-sm mb-3">
           Your restaurant’s own online ordering website & mobile app
-        </p>
-        <ul className="space-y-1 text-sm text-gray-700">
+        </p> */}
+        {/* <ul className="space-y-1 text-sm text-gray-700">
           <li className="hover:text-green-600 cursor-pointer">Mobile App</li>
           <li className="hover:text-green-600 cursor-pointer">Table Reservation</li>
           <li className="hover:text-green-600 cursor-pointer">Website Builder</li>
-        </ul>
+        </ul> */}
       </div>
 
       {/* Operations Section */}
@@ -29,14 +29,14 @@ export default function Tooltip() {
         <h2 className="font-bold mb-1 cursor-pointer hover:text-green-600 flex items-center">
           Restaurant POS System <span className="ml-1">→</span>
         </h2>
-        <p className="text-gray-500 text-sm mb-3">
+        {/* <p className="text-gray-500 text-sm mb-3">
           Cloud-based POS solution with integrated online & third-party orders
         </p>
         <ul className="space-y-1 text-sm text-gray-700">
           <li className="hover:text-green-600 cursor-pointer">Inventory</li>
           <li className="hover:text-green-600 cursor-pointer">Third-Party Order Management</li>
           <li className="hover:text-green-600 cursor-pointer">Kitchen Display System</li>
-        </ul>
+        </ul> */}
       </div>
 
       {/* Engagement Section */}
@@ -45,14 +45,14 @@ export default function Tooltip() {
         <h2 className="font-bold mb-1 cursor-pointer hover:text-green-600 flex items-center">
           CRM Solution <span className="ml-1">→</span>
         </h2>
-        <p className="text-gray-500 text-sm mb-3">
+        {/* <p className="text-gray-500 text-sm mb-3">
           Automate marketing campaigns with a fully-integrated CRM system
         </p>
         <ul className="space-y-1 text-sm text-gray-700">
           <li className="hover:text-green-600 cursor-pointer">Loyalty Program</li>
           <li className="hover:text-green-600 cursor-pointer">Feedback System</li>
           <li className="hover:text-green-600 cursor-pointer">IVR Service</li>
-        </ul>
+        </ul> */}
       </div>
 
     </div>

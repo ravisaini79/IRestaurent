@@ -6,21 +6,25 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-10 px-6">
       
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-sm text-center md:text-left">
 
         {/* About iRestaurant */}
         <div>
-          <h3 className="font-bold mb-3 text-green-500">iRestaurant Software</h3>
+          <h3 className="font-bold mb-3 text-white text-center md:text-left">
+            iRestaurant Software
+          </h3>
           <p className="text-gray-300 leading-6">
             iRestaurant is a powerful restaurant management solution designed to handle
-            billing, KOT, inventory, CRM, reporting, online orders, and much more.
-            Streamline your restaurant operations with a fully centralized system.
+            billing, KOT, inventory, CRM, reporting, online orders, and more —
+            all in one centralized system.
           </p>
         </div>
 
         {/* Quick Links */}
         <div>
-          <h3 className="font-bold mb-3">QUICK LINKS</h3>
+          <h3 className="font-bold mb-3 text-white text-center md:text-left">
+            QUICK LINKS
+          </h3>
           <ul className="space-y-1 text-gray-300">
             <li>About Us</li>
             <li>Pricing</li>
@@ -33,8 +37,8 @@ export default function Footer() {
         </div>
 
         {/* Contact Us */}
-        <div>
-          <h3 className="font-bold mb-3">CONTACT US</h3>
+        <div className="text-center md:text-left">
+          <h3 className="font-bold mb-3 text-white">CONTACT US</h3>
 
           <p className="text-gray-300 leading-6">
             <strong>Green Wheels Software</strong>
@@ -66,7 +70,8 @@ export default function Footer() {
             </a>
           </p>
 
-          <div className="flex space-x-4 mt-4 text-xl">
+          {/* Social Icons */}
+          <div className="flex justify-center md:justify-start space-x-4 mt-4 text-xl">
             <a href="#" className="hover:text-green-400"><FaFacebookF /></a>
             <a href="#" className="hover:text-green-400"><FaTwitter /></a>
             <a href="#" className="hover:text-green-400"><FaSquareInstagram /></a>

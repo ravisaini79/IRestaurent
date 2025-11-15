@@ -45,25 +45,25 @@ function About() {
         <div className="flex flex-col lg:flex-row items-start gap-10 mt-10">
           
           {/* Left Content */}
-          <div className="lg:w-2/3">
-            <h4 className="text-2xl font-bold">
+          <div className="lg:w-2/3 ">
+            <h4 className="text-2xl font-bold  mb-6" >
               <span className="bg-green-500 text-white rounded px-2 py-1">
                 Green Wheels
               </span>{" "}
               offers Software Development Services:
+              
             </h4>
+            {/* <hr className="mb-5 " /> */}
 
-            <ul className="text-gray-700 mt-5">
-              {features.map((item, index) => (
-                <li
-                  key={index}
-                  className="flex items-center mb-3 text-lg"
-                >
-                  <i className="fa fa-check text-green-600 mr-3"></i>
-                  {item}
-                </li>
-              ))}
-            </ul>
+        <ul className="text-gray-700 mt-5 grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-6 mt-3" style={{borderTop:'1px solid #dad1d1'}}>
+  {features.map((item, index) => (
+    <li key={index} className="flex items-center">
+      <i className="fa fa-check text-green-600 mr-3"></i>
+      {item}
+    </li>
+  ))}
+</ul>
+
           </div>
 
           {/* Right Image */}
