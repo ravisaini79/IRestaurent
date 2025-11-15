@@ -69,7 +69,7 @@ function About() {
           {/* Right Image */}
           <div className="lg:w-1/3 flex justify-center">
             <img
-              src="https://dekho.co/wp-content/uploads/2020/08/irestaurant.png"
+              src="/IRImages/services.png"
               alt="iRestaurant Software"
               className="w-full max-w-xs object-contain drop-shadow-md"
             />

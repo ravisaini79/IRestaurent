@@ -8,6 +8,7 @@ import TestimonialSlider from '../components/TestimonialSlider';
 import { useEffect, useRef } from 'react';
 import About from '../components/About';
 import { useScroll } from '../context/ScrollContext';
+import Homeslider from './Homeslider';
 
 
 export default function Home({setScrollHandler }) {
@@ -25,10 +26,11 @@ export default function Home({setScrollHandler }) {
     <>
      
     {/* section I */}
+    {/* <Homeslider/> */}
     <section className="backg  px-6 lg:px-24 flex flex-col lg:flex-row items-center h-100" style={{justifyContent:'end'}}>
       {/* Text Content */}
       <div className="max-w-xl mb-12 lg:mb-0 text-end ">
-        <h1 className="text-3xl lg:text-[42px] font-bold text-warning-100 mb-4 leading-tight">
+        <h1 className="text-3xl lg:text-[42px] font-bold text-white mb-4 leading-tight">
           A single platform for all <br /> your restaurant’s needs
         </h1>
         <h4 className="text-gray-900 mb-6">
@@ -56,17 +58,17 @@ export default function Home({setScrollHandler }) {
         Trusted By 200+ Restaurants
       </h2>
 
-      <div className="grid grid-cols-4 gap-4 sm:grid-cols-8 bg-white">
-        {/* Replace these src values with your actual logo image paths */}
-        <img src="public/Menu/bakehut.jpg" alt="Bakehut" className="h-20 object-contain" />
-        <img src="public/Menu/Baramasi.jpg" alt="Baramasi" className="h-20 object-contain" />
-        <img src="public/Menu/club naila.jpg" alt="Club Naila" className="h-20 object-contain" />
-        <img src="public/Menu/CONSTITUTIONLOGO-png.png" alt="RajCCR" className="h-20 object-contain" />
-        <img src="public/Menu/Dhaba culture.jpg" alt="Dhaba Culture" className="h-20 object-contain" />
-        <img src="public/Menu/Kesar-Png-Logo_130x.webp" alt="Kesar" className="h-20 object-contain" />
-        <img src="public/Menu/sky beach.jpg" alt="Sky Beach" className="h-20 object-contain" />
-        <img src="public/Menu/sky fall.png" alt="Sky Fall" className="h-20 object-contain" />
-      </div>
+ <div className="grid grid-cols-4 gap-4 sm:grid-cols-8 bg-white">
+  <img src="/Menu/bakehut.jpg" alt="Bakehut" className="h-20 object-contain" />
+  <img src="/Menu/Baramasi.jpg" alt="Baramasi" className="h-20 object-contain" />
+  <img src="/Menu/club naila.jpg" alt="Club Naila" className="h-20 object-contain" />
+  <img src="/Menu/CONSTITUTIONLOGO-png.png" alt="RajCCR" className="h-20 object-contain" />
+  <img src="/Menu/Dhaba culture.jpg" alt="Dhaba Culture" className="h-20 object-contain" />
+  <img src="/Menu/Kesar-Png-Logo_130x.webp" alt="Kesar" className="h-20 object-contain" />
+  <img src="/Menu/sky beach.jpg" alt="Sky Beach" className="h-20 object-contain" />
+  <img src="/Menu/sky fall.png" alt="Sky Fall" className="h-20 object-contain" />
+</div>
+
     </section>
     <About/>
     <SolutionSection/>

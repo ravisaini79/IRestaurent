@@ -16,7 +16,7 @@ const Header = () => {
         {/* Logo */}
         <div className="flex items-center space-x-2">
           
-          <Link to="/"><img className="bg-transparent" style={{width:'200px'}} src="public/Weblogo.png" alt="logo" /></Link>
+          <Link to="/"><img className="bg-transparent" style={{width:'200px'}} src="/Weblogo.png" alt="logo" /></Link>
           <Link to="/">
             {/* <span className="text-lg tracking-widest font-medium cursor-pointer">greenwheels</span> */}
           </Link>

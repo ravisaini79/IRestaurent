@@ -1,0 +1,60 @@
+import React from 'react'
+
+function Homeslider() {
+  return (
+    <div>
+
+<nav>
+  <a href="#" class="logo">ZENITH</a>
+  <div class="nav-links">
+    <a href="#">Products</a>
+    <a href="#">Enterprise</a>
+    <a href="#">Resources</a>
+    <a href="#">Company</a>
+  </div>
+  <div class="auth-buttons">
+    <button class="login">Sign In</button>
+    <button class="signup">Get Started</button>
+  </div>
+</nav>
+
+<main class="hero">
+  <div class="hero-content">
+    <h1>Transform Your<br/>Financial Future</h1>
+    <p>Unlock the power of next-generation payment solutions. Experience seamless transactions, advanced analytics, and enterprise-grade security.</p>
+    <div class="cta-group">
+      <button class="cta-button">Start Free Trial</button>
+      <button class="cta-button-secondary">Watch Demo</button>
+    </div>
+
+    <div class="stats-container">
+      <div class="stat-item">
+        <span class="stat-number">$2B+</span>
+        <span class="stat-label">Transactions</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">150k+</span>
+        <span class="stat-label">Active Users</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">99.9%</span>
+        <span class="stat-label">Uptime</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-graphics">
+    <div class="gradient-orb"></div>
+    <div class="floating-cards">
+      <div class="card card-1"></div>
+      <div class="card card-2"></div>
+      <div class="card card-3"></div>
+    </div>
+  </div>
+</main>
+
+    </div>
+  )
+}
+
+export default Homeslider

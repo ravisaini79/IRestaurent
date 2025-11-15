@@ -688,10 +688,10 @@ section.branding-sec {
         transition: .4s all;
     }
     
-    .youtube-player img:hover {
+    /* .youtube-player img:hover {
         -webkit-filter: brightness(75%);
     }
-    
+     */
     .youtube-player .play {
         height: 72px;
         width: 72px;
@@ -926,9 +926,9 @@ div#point .intro-img img.restaurant-management {
 section#software-company.usa-page {
     padding: 8vh 10vh 6vh 10vh;
 }
-section#software-company.usa-page .software-company-section img {
+/* section#software-company.usa-page .software-company-section img {
 
-}
+} */
 .software-company-section.large-12.medium-12.small-12.text-center {
     max-width: 900px;
     display: flex;
@@ -1613,7 +1613,7 @@ span.error{position:absolute;right:10px;top:calc(50% - 0.3vh);font-size:30px;bac
 #greenwheels-copyright{border-top:1px solid rgba(216, 216, 216, 0.1);}
 #greenwheels-address *:hover{opacity:1 !important;}
 #qiuck-links .text-padding{margin:1.5vh 0 0 !important;}
-header.white-Header .small-view-header li.nav-toggler a{-webkit-filter:invert();}
+/* header.white-Header .small-view-header li.nav-toggler a{-webkit-filter:invert();} */
 .reveal-modal-bg{background:rgba(0,0,0,0.65);}
 div#myModal{    z-index: 99999;
     position: fixed;
