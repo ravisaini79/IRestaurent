@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 export default function RestaurantTypeTooltip() {
   return (
     <div className="bg-white shadow-lg rounded p-6 w-40">
       {/* flex space-x-8 */}
-      
+
       {/* Left Side */}
       {/* <div>
         <h2 className="text-lg font-semibold mb-2">Restaurant Types</h2>
@@ -22,12 +23,14 @@ export default function RestaurantTypeTooltip() {
 
       {/* Right Side */}
       <div className="space-y-2 justify-content-center align-items-center ">
-        <p className="hover:text-green-600 cursor-pointer">Bar</p>
-        <p className="hover:text-green-600 cursor-pointer">Cafe</p>
-        <p className="hover:text-green-600 cursor-pointer">Cloud Kitchen</p>
-        <p className="hover:text-green-600 cursor-pointer">Enterprise</p>
-        <p className="hover:text-green-600 cursor-pointer">Dine-in</p>
-        <p className="hover:text-green-600 cursor-pointer">QSR</p>
+        <div className="hover:text-green-600 cursor-pointer"><Link to="/restaurant-type/bar">Bar</Link></div>
+        <div className="hover:text-green-600 cursor-pointer"><Link to="/restaurant-type/cafe">Cafe</Link></div>
+        <div className="hover:text-green-600 cursor-pointer"><Link to="/restaurant-type/cloud-kitchen">Cloud Kitchen</Link></div>
+        {/* <div className="hover:text-green-600 cursor-pointer"><Link to="/restaurant-type/enterprise">Enterprise</Link></div> */}
+        <div className="hover:text-green-600 cursor-pointer"><Link to="/restaurant-type/dine-in">Dine-In</Link></div>
+        {/* <div className="hover:text-green-600 cursor-pointer"><Link to="/restaurant-type/qsr">QSR</Link></div> */}
+
+
       </div>
 
     </div>

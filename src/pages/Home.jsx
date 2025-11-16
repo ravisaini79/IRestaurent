@@ -5,16 +5,18 @@ import ReviewSitesSection from '../components/ReviewSitesSection';
 // import greenwheelsAdvantage from '../components/greenwheelsAdvantage';
 import DemoForm from '../components/DemoForm';
 import TestimonialSlider from '../components/TestimonialSlider';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import About from '../components/About';
 import { useScroll } from '../context/ScrollContext';
 import Homeslider from './Homeslider';
+import AboutPage from './AboutPage';
 
 
 export default function Home({setScrollHandler }) {
   const formRef = useRef(null);
   const { setScrollToForm } = useScroll();
-
+  const { scrollToForm } = useScroll();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     setScrollToForm(() => () => {
@@ -33,13 +35,13 @@ export default function Home({setScrollHandler }) {
       {/* Text Content */}
       <div className="max-w-xl mb-12 lg:mb-0 text-center ">
         <h1 className="text-3xl lg:text-[42px] font-bold text-white mb-4 leading-tight">
-          A single <b className='' style={{color:'grey'}}>platform</b> for all <br /> your restaurant’s needs
+          A single <b className='text-green-500'>platform</b> for all <br /> your restaurant’s needs
         </h1>
-        <h4 className="text-gray-900 mb-6" style={{background:'aliceblue'}}>
+        <p className="text-white/90 mt-4 text-lg bg-gray-600/50 p-3 rounded" >
           Grow your online business, manage your restaurant operations & market your brand better
           with greenwheels’s restaurant software suite.
-        </h4>
-        <button className=" bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded font-semibold shadow">
+        </p>
+        <button className="mt-5 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded font-semibold shadow"  style={{cursor:'pointer'}} onClick={() => scrollToForm?.()}>
           FREE DEMO
         </button>
       </div>
@@ -55,6 +57,7 @@ export default function Home({setScrollHandler }) {
       </div> */}
     </section>
    <About/>
+   {/* <AboutPage/> */}
     {/* section 2 */}
     <section className=" bg-white py-8 px-7 text-center" style={{borderBottom:'1px solid #dad1d1'}}>
       <h2 className="text-xl font-semibold text-gray-800 mb-8">

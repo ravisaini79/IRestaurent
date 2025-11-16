@@ -28,7 +28,7 @@ function About() {
         <div className="text-center mb-12">
           <h3 className="text-3xl font-bold">
             Welcome To{" "}
-            <span className="bg-green-500 text-white rounded px-2 py-1">
+            <span className="text-green-500  rounded px-2 py-1">
               iRestaurant Software
             </span>
           </h3>
@@ -47,7 +47,7 @@ function About() {
           {/* Left Content */}
           <div className="lg:w-2/3 ">
             <h4 className="text-2xl font-bold  mb-6" >
-              <span className="bg-green-500 text-white rounded px-2 py-1">
+              <span className="text-green-500  rounded px-2 py-1">
                 Green Wheels
               </span>{" "}
               offers Software Development Services:
